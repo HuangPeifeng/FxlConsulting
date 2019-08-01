@@ -6,6 +6,10 @@
   top: 0;
   left: 0;
   width: calc(100% - 30px);
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .header-logo {
     display: flex;
