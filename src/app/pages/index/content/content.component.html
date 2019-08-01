@@ -1,1 +1,18 @@
-<p>content works!</p>
+<div class="content-layout">
+  <div class="record-layout">
+    <h1>獲獎紀錄</h1>
+    <div class="record-block">
+      <section class="record" *ngFor="let item of recordList">
+        <img [src]="item.cover">
+        <span class="info">{{ item.info }}</span>
+      </section>
+    </div>
+    <button>了解更多</button>
+  </div>
+  <div class="news-layout">
+    <h1>最新訊息</h1>
+  </div>
+  <div class="practices-layout">
+    <h1>Greater China Practices</h1>
+  </div>
+</div>
