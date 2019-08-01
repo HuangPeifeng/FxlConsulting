@@ -13,6 +13,14 @@
       justify-content: center;
       align-items: center;
 
+      @media only screen and (max-width: 1239px) and (min-width: 960px) {
+        max-width: 940px;
+      }
+
+      @media only screen and (max-width: 959px) and (min-width: 768px) {
+        max-width: 708px;
+      }
+
       h1 {
         margin: 0;
         color: #ffffff;
@@ -27,6 +35,10 @@
         display: flex;
         flex-wrap: wrap;
 
+        @media only screen and (max-width: 767px) {
+          flex-direction: column;
+        }
+
         .record {
           display: flex;
           flex-direction: column;
@@ -34,6 +46,10 @@
           align-items: center;
           width: calc(100% / 3);
           margin-bottom: 40px;
+
+          @media only screen and (max-width: 767px) {
+            width: 100%;
+          }
 
           img {
             max-width: 100%;
@@ -82,6 +98,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      @media only screen and (max-width: 1239px) and (min-width: 960px) {
+        max-width: 940px;
+      }
+
+      @media only screen and (max-width: 959px) and (min-width: 768px) {
+        max-width: 708px;
+      }
 
       h1 {
         margin: 0;
@@ -134,11 +158,47 @@
           justify-content: space-around;
           align-items: center;
 
+          @media only screen and (max-width: 1239px) and (min-width: 960px) {
+            min-height: 204px;
+            min-width: 494px;
+            max-height: 204px;
+            max-width: 494px;
+          }
+
+          @media only screen and (max-width: 959px) and (min-width: 768px) {
+            min-height: 144px;
+            min-width: 347px;
+            max-height: 144px;
+            max-width: 347px;
+          }
+
+          @media only screen and (max-width: 767px) {
+            min-height: 133px;
+            min-width: 323px;
+            max-height: 133px;
+            max-width: 323px;
+          }
+
           .title {
             font-size: 31px;
             line-height: 19px;
             font-weight: 400;
             color: rgb(19, 37, 65);
+
+            @media only screen and (max-width: 1239px) and (min-width: 960px) {
+              font-size: 23px;
+              line-height: 14px;
+            }
+
+            @media only screen and (max-width: 959px) and (min-width: 768px) {
+              font-size: 16px;
+              line-height: 10px;
+            }
+
+            @media only screen and (max-width: 767px) {
+              font-size: 16px;
+              line-height: 9px;
+            }
           }
 
           .info {
@@ -149,6 +209,21 @@
             line-height: 21px;
             font-weight: 400;
             color: #cca353;
+
+            @media only screen and (max-width: 1239px) and (min-width: 960px) {
+              min-width: 296px;
+              max-width: 296px;
+            }
+
+            @media only screen and (max-width: 959px) and (min-width: 768px) {
+              min-width: 208px;
+              max-width: 208px;
+            }
+
+            @media only screen and (max-width: 767px) {
+              min-width: 202px;
+              max-width: 202px;
+            }
           }
         }
       }
@@ -160,10 +235,23 @@
         flex-wrap: wrap;
         align-items: flex-start;
 
+        @media only screen and (max-width: 768px) {
+          flex-direction: column;
+        }
+
         .role-block {
           background-color: #fff;
           width: calc((100% / 4) - 40px);
           margin: 10px 20px;
+
+          @media only screen and (max-width: 960px) {
+            width: calc((100% / 3) - 40px);
+          }
+
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+            margin: 10px 0;
+          }
 
           .cont {
             padding: 20px;
@@ -260,6 +348,14 @@
       flex-direction: column;
       align-items: center;
 
+      @media only screen and (max-width: 1239px) and (min-width: 960px) {
+        max-width: 940px;
+      }
+
+      @media only screen and (max-width: 959px) and (min-width: 768px) {
+        max-width: 708px;
+      }
+
       h1 {
         margin: 0;
         color: #132541;
@@ -268,6 +364,15 @@
         font-weight: 700;
         letter-spacing: 0px;
         margin-bottom: 45px;
+
+        @media only screen and (max-width: 959px) and (min-width: 768px) {
+          font-size: 43px;
+          line-height: 47px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          font-size: 24px !important;
+        }
       }
 
       .info {
@@ -279,12 +384,20 @@
         margin-bottom: 15px;
         color: #4c4c4c;
         width: 58%;
+
+        @media only screen and (max-width: 768px) {
+          width: 90%;
+        }
       }
 
       .cont-layout {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+
+        @media only screen and (max-width: 768px) {
+          flex-direction: column;
+        }
 
         .block {
           display: flex;
@@ -294,6 +407,15 @@
           align-items: flex-start;
           width: calc((100% / 3) - 80px);
           padding: 40px;
+
+          @media only screen and (max-width: 1239px) {
+            width: calc((100% / 3) - 20px);
+            padding: 10px;
+          }
+
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+          }
 
           .content {
             display: flex;
