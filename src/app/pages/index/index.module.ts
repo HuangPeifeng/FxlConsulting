@@ -6,10 +6,11 @@ import { IndexComponent } from '../index/index.component';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { ContentComponent } from './content/content.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
-  declarations: [IndexComponent, HeaderComponent, BannerComponent, ContentComponent],
+  declarations: [IndexComponent, HeaderComponent, BannerComponent, ContentComponent, FooterComponent],
   imports: [
     CommonModule,
     IndexRoutingModule

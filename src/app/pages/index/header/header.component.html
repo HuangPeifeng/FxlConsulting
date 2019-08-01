@@ -1,1 +1,9 @@
-<p>header works!</p>
+<div class="header-layout">
+  <div class="header-logo">
+    <img src="assets/images/logo.png">
+    <i class="material-icons">search</i>
+  </div>
+  <ul class="header-menu">
+    <li *ngFor="let item of menu">{{ item.name }}</li>
+  </ul>
+</div>
