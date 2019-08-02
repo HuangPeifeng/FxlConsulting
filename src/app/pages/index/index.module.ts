@@ -8,6 +8,7 @@ import { BannerComponent } from './banner/banner.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { SliderModule } from 'ngx-slider';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SliderModule } from 'ngx-slider';
   imports: [
     CommonModule,
     IndexRoutingModule,
-    SliderModule
+    SliderModule,
+    AnimateOnScrollModule.forRoot()
   ]
 })
 export class IndexModule { }

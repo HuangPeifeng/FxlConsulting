@@ -3,7 +3,7 @@
     <div class="container">
       <h1>獲獎紀錄</h1>
       <div class="record-block">
-        <section class="record" *ngFor="let item of recordList">
+        <section class="record" animateOnScroll animationName="animated animatedFadeInUp fadeInUp" *ngFor="let item of recordList" [@routerTransition]>
           <img [src]="item.cover">
           <span class="info">{{ item.info }}</span>
         </section>
@@ -50,7 +50,7 @@
       <span class="info">在這過去的數十年間，中國大陸積極的發展與開放政策，使得中國大陸的經濟及科技進展迅速，目前已經到了一個國際間不可忽視的經濟大國的標準了。
         理慈結合大中華區的當地智慧及國際間的專業人才，提供各國的客戶一個最符合大中華區全方位在地需求的專業諮詢服務。 理慈為自己定位為大中華區法律事務所。</span>
       <div class="cont-layout">
-        <section class="block" *ngFor="let item of [1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3]">
+        <section class="block" animateOnScroll animationName="animated animatedFadeInUp fadeInUp" *ngFor="let item of [1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3]">
           <img src="assets/images/icon.png">
           <div class="content">
             <span class="title">區塊鏈業務</span>
