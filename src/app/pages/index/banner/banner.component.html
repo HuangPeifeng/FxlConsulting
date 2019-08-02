@@ -1,9 +1,19 @@
-<div class="banner-layout">
+<!-- <div class="banner-layout">
   <div class="banner-info">
     <span class="title">Lee, Tsai & Partners </span>
     <span class="cont">
       <span>台灣新創科技</span>
       <span>的法律先驅 </span>
+    </span>
+    <button>了解更多</button>
+  </div>
+</div> -->
+<div class="banner">
+  <ngx-slider [init]="slider"></ngx-slider>
+  <div class="banner-info" [ngClass]="{ close: infoClose }">
+    <span class="title">{{ slideItems[bannerIndex].title }}</span>
+    <span class="cont">
+      <span *ngFor="let item of slideItems[bannerIndex].info">{{ item }}</span>
     </span>
     <button>了解更多</button>
   </div>

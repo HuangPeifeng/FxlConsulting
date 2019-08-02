@@ -7,13 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
+import { SliderModule } from 'ngx-slider';
 
 
 @NgModule({
   declarations: [IndexComponent, HeaderComponent, BannerComponent, ContentComponent, FooterComponent],
   imports: [
     CommonModule,
-    IndexRoutingModule
+    IndexRoutingModule,
+    SliderModule
   ]
 })
 export class IndexModule { }

@@ -26,3 +26,7 @@ li {
 .container {
   max-width: 1220px;
 }
+
+.slide {
+  margin: 0 !important;
+}
