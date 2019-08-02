@@ -17,7 +17,7 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     CommonModule,
     IndexRoutingModule,
     SliderModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule
   ]
 })
 export class IndexModule { }
